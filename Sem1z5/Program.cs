@@ -4,9 +4,9 @@
 // 2 -> " -2, -1, 0, 1, 2"
 
 Console.WriteLine("Введите число: ");
-string N = Console.ReadLine();
-int intN = Convert.ToInt32(N);
+//string N = Console.ReadLine();
+int intN = Convert.ToInt32(Console.ReadLine());
 for (int i = -intN; i <= intN; i++)
 {
-    Console.Write(i);
+    Console.WriteLine(i);
 }
