@@ -4,8 +4,12 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine("Введите число для проверки на четность");
-int parCheck = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите целое число для проверки на четность: ");
+// проверка на ввод целого числа
+int parCheck;
+while (!int.TryParse(Console.ReadLine(), out parCheck))
+Console.Write("Что-то пошло не так, разве бывают такие целые числа!\nПросьба повторить ввод числа: ");
+// int parCheck = Convert.ToInt32(Console.ReadLine()); убрал, т. к. нашел как проверить ввод
 if (parCheck % 2 == 0)
 {
     Console.WriteLine("Число {0} - четное", parCheck);
