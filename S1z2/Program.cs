@@ -6,8 +6,8 @@
 // a = -9 b = -3 -> max = -3
 
 Console.WriteLine("Введите число A:");
-Console.WriteLine("Введите число B:");
 int NumA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число B:");
 int NumB = Convert.ToInt32(Console.ReadLine());
 if (NumA > NumB)
 {
