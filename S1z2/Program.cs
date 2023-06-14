@@ -11,13 +11,13 @@ Console.WriteLine("Введите число B:");
 int NumB = Convert.ToInt32(Console.ReadLine());
 if (NumA > NumB)
 {
-    Console.WriteLine("Число А = {0} больше числа В = {1}.", NumA, NumB);
-    Console.WriteLine("Число В = {0} меньше числа А = {1}.", NumB, NumA);
+    Console.WriteLine("Число А = {0} большее, т. к. больше числа В = {1}.", NumA, NumB);
+    Console.WriteLine("Число В = {0} меньшее, т. к. меньше числа А = {1}.", NumB, NumA);
 }
 else if (NumA < NumB)
 {
-    Console.WriteLine("Число В = {0} больше числа А = {1}.", NumB, NumA);
-    Console.WriteLine("Число А = {0} меньше числа В = {1}.", NumA, NumB);
+    Console.WriteLine("Число В = {0} большее, т. к. больше числа А = {1}.", NumB, NumA);
+    Console.WriteLine("Число А = {0} меньшее, т. к. меньше числа В = {1}.", NumA, NumB);
 }
 else
 {
