@@ -9,7 +9,7 @@ int intN = Convert.ToInt32(Console.ReadLine());
 for (int i = -intN; i <= intN; i++)
 {
     Console.Write("{0}", i);
-    if (i < intN)
+    if (i < intN) // вывод без последней ","
     {
         Console.Write(", ");
     }
