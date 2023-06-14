@@ -13,7 +13,7 @@ if (endOfRange <= 0)
 }
 else if (endOfRange == 1)
 {
-    Console.WriteLine("Число {0} нечетное, введите число больше {0}.", endOfRange);
+    Console.WriteLine("Число {0} нечетное, диапазон слишком мал, введите число больше {0}.", endOfRange);
 }
 else 
 Console.WriteLine("Четные числа из диапазона от 1 до {0}:", endOfRange);
