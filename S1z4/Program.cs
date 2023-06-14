@@ -20,4 +20,4 @@ if (NumC > max)
     max = NumC;
 }
 
-Console.WriteLine("Максимальное число {0} ", max);
+Console.WriteLine("Максимальное число из трех {0} ", max);
