@@ -5,7 +5,7 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.WriteLine("Введите пятизначное чило, проверим является ли оно палидромом:");
+Console.WriteLine("Введите пятизначное чило, проверим является ли оно палиндромом:");
 int checkNum = Convert.ToInt32(Console.ReadLine());
 
 if (checkNum > 9999 && checkNum < 100000)
