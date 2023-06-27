@@ -48,6 +48,6 @@ int[] myArray = GetRandonArray();
 int sumPositive = SumPositiveElements(myArray);
 int sumNegative = SumNegativeElements(myArray);
 
-Console.WriteLine($"[{string.Join(", ", myArray)}]");
+Console.WriteLine($"[{string.Join(", ", myArray)}]"); //вывод в строку
 Console.WriteLine($"Сумма положительных элементов = {sumPositive}");
 Console.WriteLine($"Сумма отрицательных элементов = {sumNegative}");
