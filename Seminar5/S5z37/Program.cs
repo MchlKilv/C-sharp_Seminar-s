@@ -22,12 +22,11 @@ int[] GetRandomArray()
 int[] array = GetRandomArray();
 int[] productArray = new int[(array.Length + 1) / 2];
 
+for (int i = 0; i < productArray.Length; i++)
 {
-    for (int i = 0; i < productArray.Length; i++)
-    {
-        productArray[i] = array[i] * array[array.Length - 1 - i];
-    }
+    productArray[i] = array[i] * array[array.Length - 1 - i];
 }
+
 if (array.Length % 2 != 0)
 {
     productArray[productArray.Length - 1] = array[array.Length / 2];
