@@ -4,7 +4,6 @@
 
 Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] array = GetRandomArray();
 
 int[] GetRandomArray()
 {
@@ -18,12 +17,20 @@ int[] GetRandomArray()
     return randomArray;
 }
 
-int count = 0;
-for (int i = 0; i < array.Length; i++)
+int EvenCount(int[] randomArray)
 {
-    if (array[i] % 2 == 0)
+    int count = 0;
+    for (int i = 0; i < randomArray.Length; i++)
     {
-        count++;
+        if (randomArray[i] % 2 == 0)
+        {
+            count++;
+        }
     }
+    return count;
 }
-Console.WriteLine($"{count} четных чисел в массиве: [{string.Join(", ", array)}]");
+
+int[] randomArray = GetRandomArray();
+int countEven = EvenCount(randomArray);
+
+Console.WriteLine($"{countEven} четных чисел в массиве: [{string.Join(", ", randomArray)}]");
