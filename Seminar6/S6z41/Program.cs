@@ -7,13 +7,13 @@ int InputNumers(string input)
 {
     Console.Write(input);
     int numbers = Convert.ToInt32(Console.ReadLine());
-        return numbers;
+    return numbers;
 }
 
 int[] NubersArray(int arrayNumber)
 {
     int[] numArray = new int[arrayNumber];
-    for (int i = 0; i < numArray.Length; i++) numArray[i] = InputNumers($"Введите {i+1}-е число: ");
+    for (int i = 0; i < numArray.Length; i++) numArray[i] = InputNumers($"Введите {i + 1}-е число: ");
     return numArray;
 }
 
