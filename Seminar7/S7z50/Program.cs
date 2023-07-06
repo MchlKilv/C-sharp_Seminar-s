@@ -21,7 +21,6 @@ int[,] NewMatrix(int rows, int columns)
             matrix[i, j] = Random.Shared.Next(1, 10);
         }
     }
-
     return matrix;
 }
 
@@ -35,28 +34,35 @@ void PrintMatrix(int[,] matrix)
         }
         Console.WriteLine();
     }
-    Console.WriteLine();
 }
 
 void CheckMatrix(int[,] matrix)
 {
-    Console.Write("Введите позицию строки: ");
-    int row = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int[2];
+    Console.WriteLine("Введите индексы элемента массива:");
+    PrintMatrix(matrix);
 
-    Console.Write("Введите позицию столбца: ");
-    int column = Convert.ToInt32(Console.ReadLine());
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write("Введите позицию строки: ");
+        int row = Convert.ToInt32(Console.ReadLine());
 
-    if (row >= 0 && row < matrix.GetLength(0) && column >= 0 && column < matrix.GetLength(1))
-    {
-        int value = matrix[row, column];
-        Console.WriteLine($"Значение элемента: {value}");
-    }
-    else
-    {
-        Console.WriteLine("Такого элемента нет в массиве.");
+        Console.Write("Введите позицию столбца: ");
+        int column = Convert.ToInt32(Console.ReadLine());
+
+        if (row >= 0 && row < matrix.GetLength(0) && column >= 0 && column < matrix.GetLength(1))
+        {
+            int value = matrix[row, column];
+            Console.WriteLine($"Значение элемента ячейки [{row}, {column}]: {value}");
+            i++;
+        }
+        else
+        {
+            Console.WriteLine($"Элемента с индексами [{row}, {column}] нет в массиве. Повторите ввод.");
+            Console.WriteLine();
+            i--;
+        }
     }
 }
-
 int[,] myMatrix = NewMatrix(ROWS, COLUMNS);
-PrintMatrix(myMatrix);
 CheckMatrix(myMatrix);
