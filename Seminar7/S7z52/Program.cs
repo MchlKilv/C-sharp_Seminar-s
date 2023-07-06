@@ -7,7 +7,7 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,7; 5,7; 3,7; 3.
 
-const int rows = 2; 
+const int rows = 3;
 const int columns = 4;
 
 int[,] GetRandomArray(int rows, int columns)
@@ -47,7 +47,7 @@ void ColumnMean(int[,] matrix)
     }
     for (int column = 0; column < matrix.GetLength(1); column++)
     {
-        Console.WriteLine($"Среднее арифметическое элементов в столбце {column}: {mean[column]:f2}");
+        Console.WriteLine($"Среднее арифметическое элементов в столбце {column}: {mean[column]:f1}");
     }
 }
 
