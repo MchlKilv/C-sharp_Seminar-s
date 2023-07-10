@@ -11,7 +11,7 @@ const int rows = 2;
 const int columns = 2;
 const int pages = 2;
 
-int[] NewTwoDigit()
+int[] NewTwoDigit(int rows, int columns, int pages)
 {
     int minDigit = 10;
     int maxDigit = 100;
@@ -65,7 +65,7 @@ void PrintMatrix(int[,,] threeDmatrix)
     }
 }
 
-int[] digits = NewTwoDigit();
+int[] digits = NewTwoDigit(rows, columns, pages);
 int[,,] threeDmatrix = NewThreeDimensionalArray(rows, columns, pages, digits);
 Console.WriteLine("Трёхмерный массив из неповторяющихся двузначных чисел:");
 PrintMatrix(threeDmatrix);
