@@ -72,5 +72,5 @@ int[,] matrix2 = NewMatrix(rows, columns);
 int[,] resultMatrix = MultiplyPairMatrix(matrix1, matrix2);
 Console.WriteLine("Заданы матрицы:");
 PrintPairMatrix(matrix1, matrix2);
-Console.WriteLine("После умножения элементов:");
+Console.WriteLine("Результат умножения элементов:");
 PrintResult(resultMatrix);
