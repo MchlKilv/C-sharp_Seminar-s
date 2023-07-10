@@ -17,7 +17,6 @@ int[] NewTwoDigit(int rows, int columns, int pages)
     int maxDigit = 100;
     int[] digits = new int[rows * columns * pages];
 
-
     for (int i = 0; i < rows * columns * pages && i < maxDigit - minDigit; i++)
     {
         digits[i] = minDigit + i;
