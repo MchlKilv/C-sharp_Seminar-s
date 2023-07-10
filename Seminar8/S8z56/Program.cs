@@ -55,12 +55,10 @@ void MinRowSum(int[,] rectangleMatrix)
             rowIndex = i;
         }
     }
-    Console.WriteLine();
-    Console.WriteLine($"Найдена строка {rowIndex + 1}, с наименьшей суммой элементов = {minSumRow}.");
+    Console.WriteLine($"Наименьшую сумму элементов = {minSumRow}, содержит строка #{rowIndex + 1}.");
 }
 
 int[,] rectangleMatrix = NewRectangleMatrix(rows, columns);
-Console.WriteLine();
 Console.WriteLine("Задан массив:");
 PrintRectangle(rectangleMatrix);
 MinRowSum(rectangleMatrix);
