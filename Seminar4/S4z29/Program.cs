@@ -6,7 +6,7 @@ Console.WriteLine("Введите 8 элементов массива:");
 for (int i = 0; i < array.Length; i++)
 {
     Console.Write($"Элемент {i + 1}: ");
-    string input = Console.ReadLine();
+    string input = Console.ReadLine()!;
     int element;
 
     if (int.TryParse(input, out element))

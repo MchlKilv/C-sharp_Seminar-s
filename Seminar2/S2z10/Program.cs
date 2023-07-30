@@ -5,7 +5,7 @@
 // 918 -> 1
 
 Console.WriteLine("Введите трёхзначное число:");
-string input = Console.ReadLine();
+string input = Console.ReadLine()!;
 
 if (input.Length == 3 && int.TryParse(input, out int number))
 {

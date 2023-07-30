@@ -5,7 +5,7 @@
 // 32679 -> 6
 
 Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int thirdLeftDigit = -1;                // Если нет третьей цифры
 int count = 0;
 number = Math.Abs(number);              // Получаем абсолютное значение числа
